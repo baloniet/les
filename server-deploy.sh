@@ -10,3 +10,4 @@ rm -rf dist
 mkdir dist 
 tar -xzvf client.tgz dist
 echo “Script completed.”
+pm2 show 0
