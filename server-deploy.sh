@@ -1,7 +1,7 @@
 rm -rf /package
 git pull
 tar -xzf server.tgz
-cp datasources.json package/server
+cp ../datasources.json package/server
 tar -czf package.tgz package 
 slc deploy --service=live-events-server http://localhost:8701 ./package.tgz
 rm package.tgz
