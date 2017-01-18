@@ -11,3 +11,4 @@ mkdir dist
 tar -xzf client.tgz dist
 echo “Script completed.”
 pm2 show 0
+slc ctl
