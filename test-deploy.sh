@@ -8,7 +8,7 @@ rm package.tgz
 rm -rf package
 rm -rf dist
 mkdir dist 
-tar -xzf client.tgz dist
+tar -xzf client-test.tgz dist
 echo “Script completed.”
 pm2 show 0
 slc ctl
