@@ -10,8 +10,8 @@ rm -rf dist
 rm -rf publicdist
 mkdir dist 
 tar -xzf client-test.tgz dist
-mkdir publicdist 
-tar -xzf public-client-test.tgz publicdist
+mkdir publicdisttest
+tar -xzf public-client-test.tgz publicdisttest
 echo “Script completed.”
 pm2 show 0
 slc ctl
