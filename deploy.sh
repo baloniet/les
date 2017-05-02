@@ -1,10 +1,10 @@
 #!/bin/bash  
-#echo "Preparing production client"  
-##cd ../bs4
-##npm run meksis
+echo "Preparing production client"  
+cd ../bs4
+npm run meksis
 
-##echo "Preparing test client"  
-##npm run meksis-test
+echo "Preparing test client"  
+npm run meksis-test
 
 echo "Preparing test public"  
 cd ../live-events-public
