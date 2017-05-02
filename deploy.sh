@@ -1,5 +1,5 @@
 #!/bin/bash  
-echo "Preparing production client"  
+#echo "Preparing production client"  
 ##cd ../bs4
 ##npm run meksis
 
@@ -10,9 +10,16 @@ echo "Preparing test public"
 cd ../live-events-public
 npm run meksis-test-public
 
+echo "Preparing register service"  
+cd ../live-events-register
+npm pack 
+mv live-events-register-1.0.0.tgz register.tgz
+mv register.* ../les/
+
 echo "Preparing server"  
 cd ../live_events_server
 npm run meksis 
+
 echo "Start git operations"
 cd ../les
 mv -v -f dist.tar.gz client.tgz
