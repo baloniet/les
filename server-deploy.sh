@@ -23,13 +23,13 @@ echo "preparing production client"
 rm -rf client
 mkdir client
 tar -xzf client.tar.gz client
-pm2 start /usr/local/bin/http-server --name http-client -f -- client -p 8080
+pm2 start /usr/bin/http-server --name http-client -f -- client -p 8080
 
 echo "preparing production public"
 rm -rf public
 mkdir public
 tar -xzf public.tar.gz public
-pm2 start /usr/local/bin/http-server --name http-public -f -- public -p 8082
+pm2 start /usr/bin/http-server --name http-public -f -- public -p 8082
 
 rm *.tar.gz
 rm *.tgz
