@@ -1,5 +1,6 @@
 echo "git pull"
 git pull
+pm2 delete all
 cd dist
 
 echo "preparing production server"
