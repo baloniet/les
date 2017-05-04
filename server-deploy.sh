@@ -10,7 +10,7 @@ slc deploy --service=live-events-server http://localhost:8701 ./package.tgz
 rm -rf package
 
 echo "preparing register server"
-rm -rf register
+#rm -rf register
 tar -xzf register.tgz
 mv package register
 cp ../../datasources.json register/app
