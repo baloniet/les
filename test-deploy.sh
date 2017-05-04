@@ -31,6 +31,7 @@ pm2 start /usr/local/bin/http-server --name http-public -f -- public -p 8082
 
 rm *.tar.gz
 rm *.tgz
+cd ..
 
 echo “Script completed.”
 slc ctl
