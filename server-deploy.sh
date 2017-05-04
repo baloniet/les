@@ -1,5 +1,6 @@
 echo "git pull"
 git pull
+cd dist
 
 echo "preparing production server"
 tar -xzf server.tgz
@@ -30,7 +31,8 @@ pm2 start /usr/local/bin/http-server --name http-public -f -- public -p 8082
 
 rm *.tar.gz
 rm *.tgz
+cd..
 
 echo “Script completed.”
-pm2 status
 slc ctl
+pm2 status

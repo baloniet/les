@@ -1,5 +1,6 @@
 echo "git pull"
 git pull
+cd dist
 
 echo "preparing test server"
 tar -xzf server.tgz
@@ -32,5 +33,5 @@ rm *.tar.gz
 rm *.tgz
 
 echo “Script completed.”
-pm2 status
 slc ctl
+pm2 status
