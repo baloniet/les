@@ -4,7 +4,7 @@ cd dist
 
 echo "preparing production server"
 tar -xzf server.tgz
-cp ../datasources.json package/server
+cp ../../datasources.json package/server
 tar -czf package.tgz package 
 slc deploy --service=live-events-server http://localhost:8701 ./package.tgz
 rm -rf package
@@ -13,9 +13,10 @@ echo "preparing register server"
 rm -rf register
 tar -xzf register.tgz
 mv package register
-cp ../datasources.json register/app
+cp ../../datasources.json register/app
 cd register
 pm2 start index.js --name register-server
+cd..
 
 echo "preparing production client"
 rm -rf client
