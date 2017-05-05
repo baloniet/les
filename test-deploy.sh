@@ -35,6 +35,6 @@ rm *.tar.gz
 rm *.tgz
 cd ..
 
-echo -e “\E[1;32mScript completed.\E[1;37m"
+echo -e “\E[1;32mScript completed\E[1;37m"
 slc ctl
 pm2 status
