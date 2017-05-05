@@ -18,7 +18,7 @@ cp ../../datasources.json register/app
 cd register
 pm2 start index.js --name register-server
 cd ..
-rm -rf register
+rm -rf package
 
 echo "preparing test client"
 rm -rf client
