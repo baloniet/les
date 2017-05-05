@@ -13,11 +13,12 @@ rm -rf package
 echo "preparing test register server"
 #rm -rf register
 tar -xzf register.tgz
-mv package register
+rsync -av package/ register/
 cp ../../datasources.json register/app
 cd register
 pm2 start index.js --name register-server
 cd ..
+rm -rf register
 
 echo "preparing test client"
 rm -rf client
