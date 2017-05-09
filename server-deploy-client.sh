@@ -1,6 +1,6 @@
 echo -e "\E[1;32mgit pull\E[1;37m"
 git pull
-pm2 delete client
+pm2 delete http-client
 cd dist
 
 echo -e "\E[1;32mpreparing production client\E[1;37m"
