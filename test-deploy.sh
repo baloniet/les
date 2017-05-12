@@ -31,8 +31,8 @@ mkdir public
 tar -xzf public-test.tar.gz public
 pm2 start /usr/local/bin/http-server --name http-public -f -- public -p 8082
 
-rm *.tar.gz
-rm *.tgz
+#rm *.tar.gz
+#rm *.tgz
 cd ..
 
 echo -e "\E[1;32m Script completed.\E[1;37m"

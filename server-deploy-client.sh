@@ -9,8 +9,8 @@ mkdir client
 tar -xzf client.tar.gz client
 pm2 start /usr/bin/http-server --name http-client -f -- client -p 8080
 
-rm *.tar.gz
-rm *.tgz
+#rm *.tar.gz
+#rm *.tgz
 cd ..
 
 echo -e "\E[1;32mScript completed.\E[1;37m"
