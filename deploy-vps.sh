@@ -3,16 +3,16 @@ echo "Preparing production client"
 cd ../bs4
 npm run vgccrm-vps
 
-echo "Preparing demo client"  
-npm run vgccrm-test
+#echo "Preparing demo client"  
+#npm run vgccrm-test
 
 echo "Preparing production public"  
 cd ../live-events-public
 npm run vgccrm
 
-echo "Preparing demo public"  
-cd ../live-events-public
-npm run vgccrm-test
+#echo "Preparing demo public"  
+#cd ../live-events-public
+#npm run vgccrm-test
 
 echo "Preparing register service"  
 cd ../live-events-register
