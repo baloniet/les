@@ -23,7 +23,7 @@ echo "preparing vps client"
 rm -rf client
 mkdir client
 tar -xzf client-vps.tar.gz client
-pm2 start /usr/bin/http-server --name http-client -f -- client -p 8080
+pm2 start /usr/bin/http-server --name http-client -f -- client -p 8080 -S -K /certificate/local.pem -C /certificate/local.crt.pem 
 
 echo "preparing vps public"
 rm -rf public
