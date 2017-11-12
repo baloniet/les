@@ -6,6 +6,8 @@ cd dist
 echo "preparing REST server"
 tar -xzf server.tgz
 cp ../../datasources.json package/server
+cp package/server/config.ssl.json config.json
+slc ctl env-set live-events-server NODE_ENV=ssl
 tar -czf package.tgz package 
 slc deploy --service=live-events-server http://localhost:8701 ./package.tgz
 rm -rf package
